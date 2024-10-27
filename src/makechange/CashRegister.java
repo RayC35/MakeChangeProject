@@ -60,32 +60,63 @@ public class CashRegister {
 //			System.out.println(changeNew);
 
 			int pennies = changeNew;
+			
 			System.out.print("Result: ");
 			
-			if (twenties != 0) {
-				System.out.print(twenties + " twenty dollar bill(s), ");
+			if (twenties == 1) {
+				System.out.print(twenties + " twenty dollar bill, ");
 			}
+			else if (twenties > 1 && twenties < 5) {
+				System.out.print(twenties + " twenty dollar bills, ");
+			}
+			
+			
 			if (tens != 0) {
 				System.out.print(tens + " ten dollar bill, ");
 			}
+			
+			
 			if (fives != 0) {
 				System.out.print(fives + " five dollar bill, ");
 			}
-			if (ones != 0) {
-				System.out.print(ones + " one dollar bill(s), ");
+			
+			
+			if (ones == 1) {
+				System.out.print(ones + " one dollar bill, ");
 			}
-			if (quarters != 0) {
-				System.out.print(quarters + " quarter(s), ");
+			else if (ones > 1 && ones < 5) {
+				System.out.print(ones + " one dollar bills, ");
 			}
-			if (dimes != 0) {
-				System.out.print(dimes + " dime(s),");
+			
+			
+			if (quarters == 1) {
+				System.out.print(quarters + " quarter, ");
 			}
+			else if (quarters > 1 && quarters < 4) {
+				System.out.print(quarters + " quarters, ");
+			}
+			
+			
+			if (dimes == 1) {
+				System.out.print(dimes + " dime, ");
+			}
+			else if (dimes > 1 && dimes < 5) {
+				System.out.print(dimes + " dimes, ");
+			}
+			
+			
 			if (nickels != 0) {
 				System.out.print(nickels + " nickel, ");
 			}
-			if (pennies != 0) {
-				System.out.print(pennies + " pennies.");
+			
+			
+			if (pennies == 1) {
+				System.out.print(pennies + " penny. ");
 			}
+			else if (pennies > 2 && pennies < 5); {
+				System.out.print(pennies + " pennies. ");
+			}
+			
 			
 //			System.out.println("p " + pennies);
 //			System.out.println("You get back " + twenties + " twenty dollar bill(s) " + tens + " ten dollar bill "
