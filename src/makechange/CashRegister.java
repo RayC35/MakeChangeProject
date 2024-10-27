@@ -14,19 +14,38 @@ public class CashRegister {
 		double moneyTendered = kb.nextDouble();
 		
 		if (moneyTendered < price) {
-			System.out.println("Not so fast, you're a little short");
+			System.out.println("Not so fast, you're a little short pal.");
 		}
 		else if (moneyTendered == price) {
-			System.out.println("You paid the exact amount");
+			System.out.println("You paid the exact amount!");
 		}
 		else if (moneyTendered > price) {
 			
 			double change = moneyTendered - price;
 			System.out.println("Change due: " + change);
-			change = change * 100;
-		
-			int changeNew = (int)(change);
+			int changeNew = (int)(change * 100);
 			System.out.println(changeNew);
+			
+			int twentyDollars = changeNew / 2000;
+			System.out.println(" twenty " + twentyDollars);
+			changeNew = changeNew % 2000;
+			System.out.println(changeNew);
+			
+			int tenDollars = changeNew / 1000;
+			System.out.println("ten " + tenDollars);
+			changeNew = changeNew % 1000;
+			System.out.println(changeNew);
+			
+			int fiveDollars = changeNew / 500;
+			System.out.println("five " + fiveDollars);
+			changeNew = changeNew % 500;
+			System.out.println(changeNew);
+			
+			int dollars = changeNew / 100;
+			System.out.println("d " + dollars);
+			changeNew = changeNew % 100;
+			System.out.println(changeNew);
+			
 			int quarters = changeNew / 25;
 			System.out.println("q " + quarters);
 			changeNew = changeNew % 25;
