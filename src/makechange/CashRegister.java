@@ -113,15 +113,10 @@ public class CashRegister {
 			if (pennies == 1) {
 				System.out.print(pennies + " penny. ");
 			}
-			else if (pennies > 2 && pennies < 5); {
+			else if (pennies > 1 && pennies < 5) {
 				System.out.print(pennies + " pennies. ");
 			}
 			
-			
-//			System.out.println("p " + pennies);
-//			System.out.println("You get back " + twenties + " twenty dollar bill(s) " + tens + " ten dollar bill "
-//					+ fives + " five dollar bill " + ones + " one dollar bill(s) " + quarters + "quarter(s) " + dimes
-//					+ " dime(s) " + nickels + " nickel " + pennies + " pennies ");
 		}
 
 		kb.close();
